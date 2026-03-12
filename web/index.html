@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IB-HEX-BOT - Connexion</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        h1 { color: #e53935; }
+        #qrcode {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        #qrcode img { max-width: 100%; }
+        .status {
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .connecting { background: #ffc107; color: black; }
+        .connected { background: #4caf50; }
+        .disconnected { background: #f44336; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🥷 IB-HEX-BOT</h1>
+        <p>Scannez le QR Code avec WhatsApp</p>
+        
+        <div id="qrcode">
+            <p>En attente du QR Code...</p>
+        </div>
+        
+        <div id="status" class="status disconnected">⏳ En attente...</div>
+        
+        <div style="margin-top: 30px; text-align: left; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px;">
+            <h3>📱 Comment connecter:</h3>
+            <ol>
+                <li>Ouvrez WhatsApp sur votre téléphone</li>
+                <li>Menu (3 points) → Appareils connectés</li>
+                <li>Connecter un appareil</li>
+                <li>Scannez le QR Code</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        
+        socket.on('qr', (qr) => {
+            if (qr) {
+                document.getElementById('qrcode').innerHTML = `<img src="${qr}">`;
+                document.getElementById('status').className = 'status connecting';
+                document.getElementById('status').textContent = '📱 Scannez le QR Code';
+            }
+        });
+        
+        socket.on('status', (status) => {
+            const el = document.getElementById('status');
+            el.className = 'status ' + status;
+            if (status === 'connected') {
+                el.textContent = '✅ Connecté!';
+                document.getElementById('qrcode').innerHTML = '<h2>🥷 Bot en ligne!</h2>';
+            } else if (status === 'disconnected') {
+                el.textContent = '❌ Déconnecté';
+            }
+        });
+    </script>
+</body>
+</html>
+ 
