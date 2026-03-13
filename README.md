@@ -60,3 +60,23 @@
 3. Scan le QR Code avec WhatsApp
 4. Le bot est connecté ! ✅
 
+</div>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=E53935&center=true&vCenter=true&width=400&lines=Ibrahima+Sory+Sacko;📱+224621963059;🥷+IB-HEX-BOT+Creator" alt="Developer" />
+</p>
+<p align="center">
+  <a href="https://wa.me/224621963059">
+    <img src="https://img.shields.io/badge/WhatsApp-Contact-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
+  </a>
+</p>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=15&duration=3000&pause=1000&color=FF9800&center=true&vCenter=true&width=600&lines=Ce+bot+est+développé+à+titre+éducatif.;Utilisez+responsablement.;Respectez+les+conditions+de+WhatsApp." alt="Warning" />
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=e53935&height=100&section=footer&text=🥷%20IB-HEX-BOT%20🥷&fontSize=30&fontColor=ffffff&animation=twinkling" />
+</p>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=centralbot224&label=Visites&color=e53935&style=flat" alt="Visits" />
+</p>
+<div align="center">
+⭐ Star ce repo si tu aimes le bot !
+</div>
+```
