@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.ibb.co/fYbBRWyy/IMG-20260210-WA0152.jpg" width="300" style="border-radius: 20px; box-shadow: 0 0 20px #e53935; animation: pulse 2s infinite;">
+  <img src="https://i.ibb.co/fYbBRWyy/IMG-20260210-WA0152.jpg" width="700" style="border-radius: 20px; box-shadow: 0 0 20px #e53935; animation: pulse 2s infinite;">
 </p>
 
 <h1 align="center">
