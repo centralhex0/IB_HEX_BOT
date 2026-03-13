@@ -1,7 +1,7 @@
 global.API_KEYS = {
   
   // News
-  NEWS_API: "TA_CLE_NEWSAPI",
+  NEWS_API: "5e879ed22b9445c180590559a46f0594",
 
   // Remove Background
   REMOVE_BG: "TA_CLE_REMOVE_BG",
