@@ -14,7 +14,7 @@ const commands = require('./commands/allCommands');
 
 // Configuration
 const CONFIG = {
-    ownerNumber: '224621963059@s.whatsapp.net',
+    ownerNumber: '621963059@s.whatsapp.net',
     prefix: 'Ib',
     startTime: Date.now()
 };
@@ -92,7 +92,7 @@ async function startBot() {
         
         const from = msg.key.remoteJid;
         const sender = msg.key.participant || from;
-        const isOwner = sender === CONFIG.ownerNumber;
+        const isOwner = sender.includes(CONFIG.ownerNumber.replace('@s.whatsapp.net',''));
         const isGroup = from.endsWith('@g.us');
         
         // Vérifier préfixe
