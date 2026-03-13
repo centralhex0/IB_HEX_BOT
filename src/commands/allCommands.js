@@ -17,7 +17,7 @@ const execPromise = util.promisify(exec);
 
 // Configuration
 const CONFIG = {
-    ownerNumber: '621963059@s.whatsapp.net',
+    ownerNumber: '224621963059@s.whatsapp.net',
     ownerName: 'IbSacko',
     developer: 'Ibrahima Sory Sacko',
     botName: 'IB-HEX-BOT',
