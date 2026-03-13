@@ -1,11 +1,14 @@
-
 {
   "name": "ib-hex-bot",
   "version": "3.0.0",
   "description": "Bot WhatsApp IB-HEX-BOT avec 200 commandes",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "^6.6.0",
@@ -19,3 +22,4 @@
     "socket.io": "^4.7.2"
   }
 }
+ 
