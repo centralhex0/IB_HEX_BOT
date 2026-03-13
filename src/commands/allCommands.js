@@ -1,7 +1,7 @@
 // ============================================
 // IB-HEX-BOT - 200 COMMANDES COMPLÈTES
 // Développé par Ibrahima Sory Sacko
-// Numéro: 224621963059
+// Numéro: 621963059
 // ============================================
 
 const { downloadMediaMessage } = require('@whiskeysockets/baileys');
@@ -17,12 +17,12 @@ const execPromise = util.promisify(exec);
 
 // Configuration
 const CONFIG = {
-    ownerNumber: '224621963059@s.whatsapp.net',
+    ownerNumber: '621963059@s.whatsapp.net',
     ownerName: 'IbSacko',
     developer: 'Ibrahima Sory Sacko',
     botName: 'IB-HEX-BOT',
     prefix: 'Ib',
-    mode: 'privé',
+    mode: 'public',
     timezone: 'Africa/Conakry',
     images: {
         menu: 'https://i.ibb.co/fYbBRWyy/IMG-20260210-WA0152.jpg',
@@ -110,11 +110,11 @@ const commands = {
 │ 𝗣𝗿𝗼𝗽𝗿𝗶𝗲́𝘁𝗮𝗶𝗿𝗲 : ${CONFIG.ownerName}
 │ 𝗗𝗲́𝘃𝗲𝗹𝗼𝗽𝗽𝗲𝘂𝗿 : ${CONFIG.developer}
 ╰──────────────🥷
-🤖─────────────────🤖
-       🥷 𝗜𝗕𝗥𝗔𝗛𝗜𝗠𝗔 𝗦𝗢𝗡𝗬 𝗦𝗔𝗖𝗞𝗢 🥷
-🤖─────────────────🤖
+🤖────────────────🤖
+𝗜𝗕𝗥𝗔𝗛𝗜𝗠𝗔 𝗦𝗢𝗡𝗬 𝗦𝗔𝗖𝗞𝗢
+🤖────────────────🤖
 
-🥷─────────────────🥷
+🥷────────────────🥷
 『 𝗠𝗘𝗡𝗨-𝗛𝗘𝗫-𝗕𝗢𝗧 』
 │ ⬡ 𝗺𝗲𝗻𝘂 → afficher le menu
 │ ⬡ 𝗮𝗹𝗶𝘃𝗲 → état du bot
@@ -122,22 +122,22 @@ const commands = {
 │ ⬡ 𝗮𝗹𝗹𝘃𝗮𝗿 → toutes les variables
 │ ⬡ 𝗽𝗶𝗻𝗴 → vitesse du bot
 │ ⬡ 𝗼𝘄𝗻𝗲𝗿 → propriétaire
-╰──────────────────🥷
+╰─────────────────🥷
 
-🥷──────────────────🥷
+🥷─────────────────🥷
 『 𝗢𝗪𝗡𝗘𝗥-𝗛𝗘𝗫-𝗕𝗢𝗧 』
 │ ⬡ 𝗷𝗼𝗶𝗻 → rejoindre un groupe
 │ ⬡ 𝗹𝗲𝗮𝘃𝗲 → quitter un groupe
 │ ⬡ 𝗮𝗻𝘁𝗶𝗱𝗲𝗹𝗲𝘁𝗲 → anti-suppression (on/off)
 │ ⬡ 𝘂𝗽𝗹𝗼𝗮𝗱 → téléverser
-│ ⬡ 𝘃𝘃 → vue une fois
+│ ⬡ 𝘃𝘃 → coup d'œil 
 │ ⬡ 𝗮𝗹𝗹𝗰𝗺𝗱𝘀 → toutes les commandes
 │ ⬡ 𝗱𝗲𝗹𝗲𝘁𝗲 → supprimer
-│ ⬡ 🥷 → télécharger privé
+│ ⬡ 🥷 → télécharger 
 │ ⬡ 𝗿𝗲𝗽𝗼 → dépôt GitHub
-╰──────────────────🥷
+╰─────────────────🥷
 
-🥷──────────────────🥷
+🥷─────────────────🥷
 『 𝗜𝗔-𝗛𝗘𝗫-𝗕𝗢𝗧 』
 │ ⬡ 𝗮𝗶 → intelligence artificielle
 │ ⬡ 𝗯𝘂𝗴 → signaler un bug
@@ -145,9 +145,9 @@ const commands = {
 │ ⬡ 𝗴𝗲𝗺𝗶𝗻𝗶 → IA Gemini
 │ ⬡ 𝗰𝗵𝗮𝘁𝗯𝗼𝘁 → discussion IA
 │ ⬡ 𝗴𝗽𝘁 → ChatGPT
-╰──────────────────🥷
+╰─────────────────🥷
 
-🥷──────────────────🥷
+🥷─────────────────🥷
 『 𝗖𝗢𝗡𝗩𝗘𝗥𝗧𝗜𝗦𝗦𝗘𝗨𝗥-𝗛𝗘𝗫-𝗕𝗢𝗧 』
 │ ⬡ 𝗮𝘁𝘁𝗽 → texte en sticker animé
 │ ⬡ 𝘁𝗼𝗶𝗺𝗮𝗴𝗲 → convertir en image
@@ -158,9 +158,9 @@ const commands = {
 │ ⬡ 𝘂𝗿𝗹 → extraire lien
 │ ⬡ 𝘀𝘁𝗶𝗰𝗸𝗲𝗿 → créer sticker
 │ ⬡ 𝘁𝗮𝗸𝗲 → récupérer média
-╰──────────────────🥷
+╰─────────────────🥷
 
-🥷──────────────────🥷
+🥷─────────────────🥷
 『 𝗥𝗘𝗖𝗛𝗘𝗥𝗖𝗛𝗘-𝗛𝗘𝗫-𝗕𝗢𝗧』
 │ ⬡ 𝗴𝗼𝗼𝗴𝗹𝗲 → recherche Google
 │ ⬡ 𝗽𝗹𝗮𝘆 → Play Store
@@ -172,9 +172,9 @@ const commands = {
 │ ⬡ 𝘁𝗶𝗸𝘁𝗼𝗸 → TikTok
 │ ⬡ 𝗹𝘆𝗿𝗶𝗰𝘀 → paroles chanson
 │ ⬡ 𝗶𝗺𝗮𝗴𝗲 → images
-╰──────────────────🥷
+╰─────────────────🥷
 
-🥷──────────────────🥷
+🥷─────────────────🥷
 『 𝗗𝗜𝗩𝗘𝗥𝗧𝗜𝗦𝗦𝗘𝗠𝗘𝗡𝗧-𝗛𝗘𝗫-𝗕𝗢𝗧 』
 │ ⬡ 𝗴𝗲𝘁𝗽𝗽 → photo de profil
 │ ⬡ 𝗴𝗼𝗼𝗱𝗻𝗶𝗴𝗵𝘁 → bonne nuit
@@ -185,9 +185,9 @@ const commands = {
 │ ⬡ 𝗰𝗼𝘂𝗽𝗹𝗲 → couple
 │ ⬡ 𝗽𝗼𝗹𝗹 → sondage
 │ ⬡ 𝗲𝗺𝗼𝗷𝗶𝗺𝗶𝘅 → mélange emojis
-╰──────────────────🥷
+╰─────────────────🥷
 
-🥷─────────────────🥷
+🥷────────────────🥷
 『 𝗚𝗥𝗢𝗨𝗣𝗘𝗦-𝗛𝗘𝗫-𝗕𝗢𝗧 』
 │ ⬡ 𝗸𝗶𝗰𝗸𝗮𝗹𝗹 → exclure tous
 │ ⬡ 𝘁𝗮𝗴𝗮𝗱𝗺𝗶𝗻 → mention admins
@@ -204,9 +204,9 @@ const commands = {
 │ ⬡ 𝗮𝗻𝘁𝗶𝗴𝗺 → anti-mention (on/off)
 │ ⬡ 𝗰𝗿𝗲𝗮𝘁𝗲 → créer groupe
 │ ⬡ 𝗴𝗿𝗼𝘂𝗽𝗶𝗻𝗳𝗼 → infos groupe
-╰──────────────────🥷
+╰─────────────────🥷
 
-🥷──────────────────🥷
+🥷─────────────────🥷
 『 𝗥𝗘́𝗔𝗖𝗧𝗜𝗢𝗡𝗦-𝗛𝗘𝗫-𝗕𝗢𝐓 』
 │ ⬡ 𝘆𝗲𝗲𝘁 → jeter
 │ ⬡ 𝘀𝗹𝗮𝗽 → gifler
@@ -218,9 +218,9 @@ const commands = {
 │ ⬡ 𝘀𝗺𝘂𝗴 → narquois
 │ ⬡ 𝗰𝗿𝗶𝗻𝗴𝗲 → malaise
 │ ⬡ 𝗵𝗮𝗽𝗽𝘆 → heureux
-╰──────────────────🥷
+╰─────────────────🥷
 
-🥷──────────────────🥷
+🥷─────────────────🥷
 『 𝗧𝗘́𝗟𝗘́𝗖𝗛𝗔𝗥𝗚𝗘𝗠𝗘𝗡𝗧-𝗛𝗘𝗫-𝗕𝗢𝗧 』
 │ ⬡ 𝘆𝘁𝗺𝗽𝟯 → YouTube MP3
 │ ⬡ 𝘆𝘁𝗺𝗽𝟰 → YouTube MP4
@@ -230,9 +230,9 @@ const commands = {
 │ ⬡ 𝘁𝘄𝗶𝘁𝘁𝗲𝗿 → Twitter/X DL
 │ ⬡ 𝗽𝗹𝗮𝘆 → musique
 │ ⬡ 𝘃𝗶𝗱𝗲𝗼 → vidéo
-╰──────────────────🥷
+╰─────────────────🥷
 
-🥷──────────────────🥷
+🥷─────────────────🥷
 『 𝗢𝗨𝗧𝗜𝗟𝗦-𝗛𝗘𝗫-𝗕𝗢𝗧 』
 │ ⬡ 𝘁𝗿𝗮𝗱𝘂𝗶𝗿𝗲 → traduction
 │ ⬡ 𝘄𝗲𝗮𝘁𝗵𝗲𝗿 → météo
@@ -243,9 +243,9 @@ const commands = {
 │ ⬡ 𝘀𝗵𝗼𝗿𝘁 → raccourcir URL
 │ ⬡ 𝗯𝗮𝘀𝗲𝟲𝟰 → encoder/décoder
 │ ⬡ 𝗺𝗼𝗿𝘀𝗲 → code Morse
-╰──────────────────🥷
+╰─────────────────🥷
 
-🥷──────────────────🥷
+🥷─────────────────🥷
 『 𝗝𝗘𝗨𝗫-𝗛𝗘𝗫-𝗕𝗢𝗧 』
 │ ⬡ 𝘁𝗶𝗰𝘁𝗮𝗰𝘁𝗼𝗲 → morpion
 │ ⬡ 𝗽𝗲𝗱𝗿𝗮 → pierre feuille ciseaux
@@ -255,9 +255,9 @@ const commands = {
 │ ⬡ 𝗱𝗮𝗿𝗲 → défi
 │ ⬡ 𝘀𝗹𝗼𝘁 → machine à sous
 │ ⬡ 𝗹𝗼𝘁𝘁𝗲𝗿𝘆 → loterie
-╰──────────────────🥷
+╰─────────────────🥷
 
-🥷──────────────────🥷
+🥷─────────────────🥷
 『 𝗠𝗘𝗗𝗜𝗔-𝗛𝗘𝗫-𝗕𝗢𝗧 』
 │ ⬡ 𝗯𝗹𝘂𝗿 → flou
 │ ⬡ 𝘀𝗵𝗮𝗿𝗽𝗲𝗻 → netteté
@@ -267,9 +267,9 @@ const commands = {
 │ ⬡ 𝗳𝗹𝗶𝗽 → retourner
 │ ⬡ 𝗿𝗼𝘁𝗮𝘁𝗲 → rotation
 │ ⬡ 𝗿𝗲𝗺𝗼𝘃𝗲𝗯𝗴 → supprimer fond
-╰──────────────────🥷
+╰─────────────────🥷
 
-🥷──────────────────🥷
+🥷─────────────────🥷
 『 𝗜𝗡𝗙𝗢-𝗛𝗘𝗫-𝗕𝗢𝗧 』
 │ ⬡ 𝗰𝗼𝘃𝗶𝗱 → stats COVID
 │ ⬡ 𝗻𝗲𝘄𝘀 → actualités
@@ -279,9 +279,9 @@ const commands = {
 │ ⬡ 𝗰𝗿𝗶𝗰𝗸𝗲𝘁 → cricket
 │ ⬡ 𝗯𝗮𝘀𝗸𝗲𝘁𝗯𝗮𝗹𝗹 → basketball
 │ ⬡ 𝘁𝗲𝗻𝗻𝗶𝘀 → tennis
-╰──────────────────🥷
+╰─────────────────🥷
 
-🥷──────────────────🥷
+🥷─────────────────🥷
 『 𝗨𝗧𝗜𝗟𝗜𝗧𝗬-𝗛𝗘𝗫-𝗕𝗢𝗧 』
 │ ⬡ 𝗰𝗮𝗹𝗰 → calcul rapide
 │ ⬡ 𝘁𝗶𝗺𝗲𝗿 → minuteur
@@ -291,19 +291,19 @@ const commands = {
 │ ⬡ 𝗰𝗮𝗹𝗲𝗻𝗱𝗮𝗿 → calendrier
 │ ⬡ 𝗯𝗶𝗿𝘁𝗵𝗱𝗮𝘆 → anniversaire
 │ ⬡ 𝗰𝗼𝘂𝗻𝘁𝗱𝗼𝘄𝗻 → compte à rebours
-╰──────────────────🥷
+╰─────────────────🥷
 
-🥷───────────────────🥷
-                   ⚡ 𝗜𝗕-𝗛𝗘𝗫-𝗕𝗢𝗧 ⚡
+🥷──────────────────🥷
+       ⚡ 𝗜𝗕-𝗛𝗘𝗫-𝗕𝗢𝗧 ⚡
 
-        propulsé par 𝗜𝗯𝗿𝗮𝗵𝗶𝗺𝗮 𝘀𝗮𝗰𝗸𝗼 𝘀𝗮𝗰𝗸𝗼™
-🥷───────────────────🥷
+  propulsé par 𝗜𝗯𝘀𝗮𝗰𝗸𝗼™
+🥷──────────────────🥷
 
-📊 *Statistiques:*
-• 200 commandes disponibles
-• Préfixe: ${CONFIG.prefix}
-• Heure: ${time}
-• Statut: 🟢 En ligne`;
+📊 *𝐒𝐭𝐚𝐭𝐢𝐬𝐭𝐢𝐪𝐮𝐞𝐬:*
+• 200 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐞𝐬 𝐝𝐢𝐬𝐩𝐨𝐧𝐢𝐛𝐥𝐞𝐬 𝐩𝐨𝐮𝐫 𝐯𝐨𝐮𝐬
+• 𝐏𝐫𝐞𝐟𝐢𝐱𝐞: ${CONFIG.prefix}
+• 𝐇𝐞𝐮𝐫𝐞: ${time}
+• 𝐒𝐭𝐚𝐭𝐮𝐭: 🟢 En ligne`;
 
             await sock.sendMessage(from, {
                 image: { url: CONFIG.images.menu },
