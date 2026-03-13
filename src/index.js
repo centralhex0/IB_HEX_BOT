@@ -14,7 +14,7 @@ const commands = require('./commands/allCommands');
 
 // Configuration
 const CONFIG = {
-    ownerNumber: '621963059@s.whatsapp.net',
+    ownerNumber: '224621963059@s.whatsapp.net',
     prefix: 'Ib',
     startTime: Date.now()
 };
